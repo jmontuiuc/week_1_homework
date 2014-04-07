@@ -68,6 +68,38 @@ dt  {
 dd {
     padding-left: 160px;
 }
+
+.schedule {  
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.week {
+ -webkit-transform: rotate(-90deg);
+ text-transform: uppercase;
+ text-align: center;
+}
+
+tbody {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+th{
+  color: white;
+  background-color: black;
+  font-weight: lighter;
+  border: solid thin lightgray; 
+}
+
+td{
+  border: solid thin lightgray;
+}
+
+.odd_week {
+  background-color: lavender;
+}
 /* ----------------------------------------------------------------- */
 /* The scary stuff below is just to get the right font loaded up.    */
 /* Don't worry about it. Write your CSS rules above the dotted line. */
