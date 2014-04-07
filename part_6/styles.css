@@ -1,9 +1,73 @@
+html  {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.title { 
+  font-size: 30pt;
+  text-align: center;
+  letter-spacing: .2em;
+}
+
+.subtitle {
+  text-align: center;
+  font-style:italic;
+  letter-spacing: .2em;
+}
+
+.quote{
+  font-style: italic;
+}
+
+footer{
+  text-align: right;
+  text-transform: uppercase;
+}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+
 body {
   font-family: "Computer Modern Serif";
   font-size: 16pt;
 }
 
+h2{
+ text-transform: uppercase;
+  letter-spacing: .15em;
+  border-top: solid medium  ;
+  border-bottom: solid thin;
+  font-size: 16pt
+}
 
+h2 small{
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+
+ol {
+  counter-reset: list;
+}
+ol > li {
+  list-style: none;
+}
+ol > li:before {
+  content: counter(list, decimal) ") ";
+  counter-increment: list;
+}
+ol{ padding-left:0; list-style-position:inside; }
+
+dt  {
+    float:left;
+}
+
+dd {
+    padding-left: 160px;
+}
 /* ----------------------------------------------------------------- */
 /* The scary stuff below is just to get the right font loaded up.    */
 /* Don't worry about it. Write your CSS rules above the dotted line. */
